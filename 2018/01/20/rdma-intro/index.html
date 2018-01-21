@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="SwanGeese, USTC" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="USTC Team SwanGeese" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Mainpage for Team SwanGeese for various student HPC-related competitions in University of Science and Technology of China.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Categories">
+<meta property="og:url" content="https://USTC-SwanGeese.github.io/categories/index.html">
+<meta property="og:site_name" content="USTC Team SwanGeese">
+<meta property="og:description" content="Mainpage for Team SwanGeese for various student HPC-related competitions in University of Science and Technology of China.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-21T02:47:07.139Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Categories">
+<meta name="twitter:description" content="Mainpage for Team SwanGeese for various student HPC-related competitions in University of Science and Technology of China.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://USTC-SwanGeese.github.io/categories/"/>
+
+
+
+
+
+  <title>全国大学生 RDMA 编程竞赛介绍 | USTC Team SwanGeese</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">USTC Team SwanGeese</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://USTC-SwanGeese.github.io/2018/01/20/rdma-intro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Team SwanGeese">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="USTC Team SwanGeese">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">全国大学生 RDMA 编程竞赛介绍</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-20T10:00:00+00:00">2018-01-20</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Introduction/" itemprop="url" rel="index">
+                    <span itemprop="name">Introduction</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>嗯，先贴一段比赛官网的介绍：</p>
+<blockquote>
+<p>全国大学生 RDMA 编程竞赛，旨在为大学生提供学习RDMA，并成为RDMA编程高手的绝佳机会。自2013年首次举办，大赛就吸引了来自全国各地的20余家高校报名参加。在2016年举办第四届大赛时，更是吸引了70余所高校报名参加，并受到了来自国际顶尖高性能计算、云计算和大数据领域专家的广泛关注和媒体的争相报道。</p>
+</blockquote>
+<p>简单地说呢，RDMA 是一种相对于 TCP/IP 而言完全不同的网络通信模式。TCP 通信的基础设施是<strong>以太网卡</strong>、<strong>网线</strong>、<strong>交换机</strong>，响应地，RDMA 通信通常需要依靠 <strong>InfiniBand 卡</strong>、<strong>InfiniBand 线材</strong>、<strong>InfiniBand 交换机</strong>来完成组网和通信。</p>
+<p>InfiniBand（后面简称 IB）卡通过 PCIE 接口与计算机互联。除了通信带宽、通信延迟都比以太网要好上几十倍这个量级以外，比较特别的是 IB 卡具有<strong>自主访问、读写内存</strong>的能力，因此它可以完成普通的 TCP 通信完全做不到功能，即我们这里需要的 <strong>RDMA（Remote Direct Memory Access）</strong>。</p>
+<a id="more"></a>
+<h1 id="RDMA"><a href="#RDMA" class="headerlink" title="RDMA"></a>RDMA</h1><p>RDMA（Remote Direct Memory Access）技术全称远程直接数据存取，就是为了解决网络传输中服务器端数据处理的延迟而产生的。RDMA通过网络把数据直接写到对方机器的内存里，即将数据从一个系统快速移动到远程系统存储器中，而不对操作系统造成任何影响，这样就不需要用到多少计算机的处理功能。它消除了外部存储器复制和上下文切换操作，因而能解放内存带宽和CPU周期用于改进应用系统性能。</p>
+<blockquote>
+<p>简单地说，利用 RDMA 技术，一个节点可以绕过 CPU，直接读写远程节点上的内存数据。</p>
+</blockquote>
+<h2 id="传统意义上的-DMA"><a href="#传统意义上的-DMA" class="headerlink" title="传统意义上的 DMA"></a>传统意义上的 DMA</h2><p>直接内存访问（DMA）方式，是一种完全由硬件执行I/O交换的工作方式。在这种方式中， DMA 控制器从CPU 完全接管对总线的控制，数据交换不经过CPU ，而直接在内存和IO设备之间进行。DMA工作时，由DMA控制器向内存发出地址和控制信号，进行地址修改，对传送字的个数计数，并且以中断方式向CPU 报告传送操作的结束。</p>
+<p>使用 DMA 方式的目的是减少大批量数据传输时 CPU 的开销。采用专用DMA 控制器(DMAC) 生成访存地址并控制访存过程，优点有操作均由硬件电路实现，传输速度快；CPU 基本不干预，仅在初始化和结束时参与，CPU 与外设并行工作，效率高。</p>
+<hr>
+<p>更具体的原理就先不多说了，大家可以自己查资料看。</p>
+<h1 id="那么比赛比什么？"><a href="#那么比赛比什么？" class="headerlink" title="那么比赛比什么？"></a>那么比赛比什么？</h1><p>赛方每年会给一个原本<strong>基于 TCP/IP</strong> 来进行多机通信的软件，要求你<strong>修改源代码</strong>，把这个软件改成<strong>基于 RDMA 的通信方式</strong>。</p>
+<p>17年是给了 MXNet，16年是 TensorFlow，15年是 Memcached。</p>
+<p>每年的应用基本上都是一些行业中特别热门的软件。</p>
+<p>那么把大象装进冰箱需要几个步骤？3步。</p>
+<ol>
+<li>首先需要分析<strong>软件源代码</strong>，理解它的计算和多节点通信的方式；</li>
+<li>修改代码，把原来基于 TCP/IP 的 Socket 的通信拿掉，换上 RDMA 的通信方式；</li>
+<li>对修改的成果做测试，对比性能等等参数，写一份<strong>英文报告</strong>。</li>
+</ol>
+<h2 id="代码好改吗？"><a href="#代码好改吗？" class="headerlink" title="代码好改吗？"></a>代码好改吗？</h2><p>是不是我找到原本用 TCP 写的例如<code>sendmsg</code>和<code>recvmsg</code>、<code>readv</code>等等这种 Socket 通信函数用 RDMA 的接口换掉就好啦？</p>
+<p>还真不是这么简单。</p>
+<hr>
+<p>首先，RDMA 和 TCP 的通信逻辑、整个通信过程会有根本性的区别。</p>
+<p>TCP 通信的一般方式是（简化之后）：</p>
+<ul>
+<li>设立 socket 通道</li>
+<li>握手等等操作建立连接</li>
+<li>一边 send 另一边 recv 然后数据就收到了</li>
+</ul>
+<p>RDMA 的工作模式是基于一个完成队列的形式：</p>
+<ul>
+<li>首先建立 TCP 连接</li>
+<li>通过 TCP 通道交换双方的一些参数信息</li>
+<li>把对方的关键参数注册到自己的 IB 卡上，这样双方的 RDMA 连接就建立完成了</li>
+<li>接下来还需要创建完成队列、保护域等等一系列 RDMA 通信用的东西</li>
+<li>需要被 IB 卡操作的内存区域还需要提前注册到 IB 卡上，只有这样做了，才能保证 IB 卡有读写某一块内存地址的权限，也能保证这块内存不会被操作系统换页出去</li>
+<li>接收端向自己的等待队列提交一个接收请求</li>
+<li>发送端向自己的等待队列提交一个发送请求，之后 IB 卡会处理这条请求，根据其中的一些信息完成访问远程服务器上内存数据的操作，完成之后向自己的完成队列提交一条完成请求的信息，这时可以通过一些 API 来查询到完成队列里面的内容</li>
+<li>接收端处理完之后，也会向自己的完成队列里面提交一条完成请求的信息，这时可以通过一些 API 来查询到完成队列里面的内容</li>
+<li>把上面这个过程写在代码逻辑中，我们需要做的就是提交请求到 IB 卡上，然后后面的通信就不用管了，接下来要做的只是查询完成队列，查到完成队列中有新的内容了，就知道了刚刚的任务是完成了还是有出错的</li>
+</ul>
+<hr>
+<p>难点大概有这么几个：</p>
+<ul>
+<li>要求参赛者自己理解目标软件的计算、通信模式，自己找到可以修改的源代码（赛方在目标软件方面基本上没办法提供任何帮助，给的一些资料和培训只是关于 RDMA 的基础知识）</li>
+<li>把 TCP 换成 RDMA 并不是简单地换几个函数接口就好了，其中基本都是要涉及到通信逻辑、如何组织内存管理等等的问题</li>
+<li>通信逻辑的设计可能对最终性能的影响也会比较大，例如我们基本每年成功改出来的第一个版本，光让原本的软件逻辑跑对就已经很不错了，都是没什么性能提升的，甚至可能会更慢</li>
+</ul>
+<h2 id="关于报告（论文）"><a href="#关于报告（论文）" class="headerlink" title="关于报告（论文）"></a>关于报告（论文）</h2><p>赛方要求用英文整理参赛的所有工作，最后比赛没有答辩什么的，就是在截止日期把软件源代码和报告交上去就行了。评判的标准首先当然是优化的效果了（客观），而另一方面报告的质量也是作为考察的一部分（主观）。写的好的报告甚至就已经是一篇不错的应用论文了。</p>
+<p>报告中大概需要涉及到的内容有：</p>
+<ul>
+<li>对软件的分析</li>
+<li>你的 RDMA 改版的设计思路（核心）</li>
+<li>测试结果（重点）</li>
+</ul>
+<p>测试具体要怎么做，也是由参赛者自己选择。你可以选个自己测下来效果最好的测试算例的结果写上去，当然最好的结果是你的优化工作要对各种不同的算例都能够有比较好的效果，这些都会影响到最后的结果评判。提交报告和源代码过去之后赛方会拿你的代码进行对比测试，他们会选什么样的算例来作为测试标准就不知道了。</p>
+<p>通常情况下，需要对比的是 TCP/IP 原版、IPoIB 以及 RDMA 版的性能。IPoIB（IP over Infiniband） 技术是 InfiniBand 自带的，即把 TCP/IP 包封装成 IB 包，走 IB 链路完成传输，可以利用上 IB 网络高带宽、低延迟的特性，但是 RDMA 的一些例如绕过 CPU 直接读写内存的特性就没办法享受到了，改的比较好的 RDMA 版本性能应该是要在 IPoIB 的基础上再往上提的。</p>
+<p>关于 IPoIB 这点：</p>
+<p>假定两台机器之间同时配有以太网络和 IB 网络，以太网的 IP 地址分别是<code>192.168.0.1</code>和<code>192.168.0.2</code>，IB 网络的 IP 地址是<code>10.0.0.1</code>和<code>10.0.0.2</code>。</p>
+<p>当我们用<code>192</code>网段的 IP 地址进行通信时，数据包走的是以太网络；当用<code>10</code>网段的 IP 地址进行通信时，数据包走的是 IB 网络，即 IPoIB。</p>
+<p>那完成了 RDMA 之后呢？其实用这两个网段都可以，因为 RDMA 通信只在连接的一开始才需要走常规的通信通道交换数据，等 RDMA 连接建立之后，整个通信过程就是基于两端绑定好的 IB 卡直接完成的了，中间已经不再涉及到跟 IP 数据包有关的东西了。</p>
+<h1 id="参加这个比赛需要什么样的能力？"><a href="#参加这个比赛需要什么样的能力？" class="headerlink" title="参加这个比赛需要什么样的能力？"></a>参加这个比赛需要什么样的能力？</h1><p>基本要求跟前面 <a href="/2017/12/12/prerequisites/">技能储备要求</a> 中列的一样，另外要求能有阅读代码、编写代码的能力，这几年用到的都是 C 和 C++。</p>
+<p>要求有良好的心理素质，不要被目标软件动辄几十万的代码量给吓到。</p>
+<p>其他的就是网络方面的知识、多线程编程等等。</p>
+<hr>
+<p>其实上面这些基础如果不太好的同学也不用过于担心，我们前面几届很多一开始参赛的同学都不是说很精通这些方面，但是如果你能真正地把整个参赛过程坚持下来，从中你会学到很多东西。</p>
+<h1 id="一些参考资料"><a href="#一些参考资料" class="headerlink" title="一些参考资料"></a>一些参考资料</h1><ul>
+<li><p><a href="http://hpcadvisorycouncil.com/competition.php" target="_blank" rel="noopener">HPC Advisory Council</a></p>
+<p>比赛举办方的官网页面，历年比赛在上面都能找到</p>
+</li>
+<li><p><a href="http://www.hpcadvisorycouncil.com/pdf/rdma-read-and-write-with-ib-verbs.pdf" target="_blank" rel="noopener">RDMA Read and Write with IB Verbs <em>by Tarick Bedeir</em></a></p>
+</li>
+<li><p><a href="http://www.rdmamojo.com/" target="_blank" rel="noopener">RDMA mojo : blog on RDMA technology and programming</a></p>
+<p>RDMA mojo 是一个非常重要的资料站，上面基本上把需要用到的 RDMA 的一些函数结构给详细介绍了一遍</p>
+</li>
+<li><p><a href="http://www.mellanox.com/related-docs/prod_software/RDMA_Aware_Programming_user_manual.pdf" target="_blank" rel="noopener">RDMA Aware Networks Programming User Manual Rev 1.7</a></p>
+</li>
+<li><p><a href="http://www.hpcwire.com/hpcwire/2006-09-15/a_tutorial_of_the_rdma_model-1.html" target="_blank" rel="noopener">A Tutorial of the RDMA Model</a></p>
+</li>
+<li><p>下面是往届实验室师兄的一点零碎资料：</p>
+<ul>
+<li><a href="http://jcf94.com/2016/06/27/2016-06-27-rdma/" target="_blank" rel="noopener">RDMA Warming Up</a></li>
+<li><a href="http://jcf94.com/2016/09/07/2016-09-07-rdmaibv/" target="_blank" rel="noopener">Simple usage of RDMA ibv</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>祝未来参赛的同学都能有所收获，取的好成绩。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/RDMA/" rel="tag"># RDMA</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/19/2018-newbees-timeline/" rel="next" title="2018年招入新人队员参加比赛的大致时间安排和队员组成">
+                <i class="fa fa-chevron-left"></i> 2018年招入新人队员参加比赛的大致时间安排和队员组成
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Team SwanGeese</p>
+              <p class="site-description motion-element" itemprop="description">Mainpage for Team SwanGeese for various student HPC-related competitions in University of Science and Technology of China.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RDMA"><span class="nav-number">1.</span> <span class="nav-text">RDMA</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传统意义上的-DMA"><span class="nav-number">1.1.</span> <span class="nav-text">传统意义上的 DMA</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#那么比赛比什么？"><span class="nav-number">2.</span> <span class="nav-text">那么比赛比什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#代码好改吗？"><span class="nav-number">2.1.</span> <span class="nav-text">代码好改吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于报告（论文）"><span class="nav-number">2.2.</span> <span class="nav-text">关于报告（论文）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参加这个比赛需要什么样的能力？"><span class="nav-number">3.</span> <span class="nav-text">参加这个比赛需要什么样的能力？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一些参考资料"><span class="nav-number">4.</span> <span class="nav-text">一些参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Team SwanGeese</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=6.0.0"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=6.0.0"></script>
+
+
+  
+
+</body>
+</html>
